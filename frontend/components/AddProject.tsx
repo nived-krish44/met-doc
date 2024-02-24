@@ -13,19 +13,23 @@ import { Label } from "@/components/ui/label";
 
 import { Plus } from "lucide-react";
 
+import { projects } from "@/constants/projects";
+import { DialogClose } from "@radix-ui/react-dialog";
+
 interface AddProjectProps {
-  action: () => void;
+  text?: String;
 }
 
-export function AddProject({ action }: AddProjectProps) {
+export function AddProject({ text }: AddProjectProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button
           variant="outline"
-          className="rounded-full"
+          className="rounded-full flex gap-2"
         >
           <Plus />
+          {text}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
@@ -45,7 +49,8 @@ export function AddProject({ action }: AddProjectProps) {
             </Label>
             <Input
               id="name"
-              defaultValue="Project"
+              // defaultValue="Project"
+              placeholder="Project name"
               className="col-span-3"
             />
           </div>
@@ -58,18 +63,29 @@ export function AddProject({ action }: AddProjectProps) {
             </Label>
             <Input
               id="username"
-              defaultValue="Description of the project"
+              // defaultValue="Description of the project"
+              placeholder="Description of the project"
               className="col-span-3"
             />
           </div>
         </div>
         <DialogFooter>
-          <Button
-            type="submit"
-            onClick={action}
-          >
-            Save changes
-          </Button>
+          <DialogClose asChild>
+            <Button
+              type="submit"
+              onClick={() => {
+                console.log(projects);
+                projects.push({
+                  id: projects.length + 1,
+                  name: "new project",
+                  description: "new description",
+                });
+                // console.log(projects);
+              }}
+            >
+              Save changes
+            </Button>
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>
