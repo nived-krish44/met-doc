@@ -1,2 +1,43 @@
 ///prompt for normal meeting
+Good morning, team! Thank you all for joining today's kickoff meeting for the Zil Banks software development project. I'm Rohit Sharma, your project leader, and I'm thrilled to see such a motivated group ready to tackle this challenge.
 
+Mr. Suresh, diving straight into it, we're counting on you to craft an engaging dashboard. We need those graphs to pop, like fireworks on New Year's Eve! Pie charts, bar graphs, you name it. Let's make data visualization an art form.
+
+Ramesh, buddy, your task is crucial. Our navigation bar needs to be as smooth as butter on a hot skillet. Users should glide through our app effortlessly. Think user-centric, think intuitive!
+
+Radhesh, my man, we're entrusting you with the transaction history feature. We're talking about users scrolling through their financial history like flipping through an old photo album. Make it secure, make it snappy!
+
+John, buddy, you're our gatekeeper of security. We're counting on you to fortify our authentication database like a castle wall. No breaches allowed on your watch!
+
+Joseph, the encryption algorithm? That's our secret sauce, our magic spell to keep the hackers at bay. We need Fort Knox level security here!
+
+Philip, let's talk user details. We want our users to feel like kings and queens of their accounts. Easy management, easy peasy, lemon squeezy!
+
+George, your task is like the Swiss Army knife of our app. Settings are where users make the magic happen. Let's give them options galore!
+
+Rohan, last but not least, transaction history. Accuracy is key, my friend. We're aiming for precision here, like a Swiss watch.
+
+Now, team, let's huddle up. We've got a mountain to climb, but with teamwork and dedication, we'll reach the summit. Let's make Zil Banks the benchmark for banking software excellence!
+
+Agreed, Rohit. Let's roll up our sleeves and get to work!
+
+Absolutely, Rohit. Let's knock this out of the park!
+
+But hey, before we wrap up, let's address the elephant in the room. We've got a tight timeline, folks. We need to hustle like Usain Bolt in a sprint!
+
+Couldn't agree more. Time is money, people. Let's make every second count!
+
+
+From this conversation prepare 
+-give a variable project_name that includes the name of project in string format
+-string variable project_description with description about the project
+-variable team_leader the gives the name of the leader of the team
+-a string variable tasks that contains tasks to be done 
+
+-an array of objects named assigned inside it  contains variables assigned_to that contains the name of employee the task assigned,string task_name that contains the name of task, string constraints that contains the constraints of task, and the string time_estimation that contains the estimated time for the task
+Array of string named issues that contains the list of issues
+A string named summary that contains the summary of project
+A array of objects named scope that contains start_date and end_date in date format
+string estimated_cost that contains the estimated cost
+string risk that contains the risks project
+return all this in json format
